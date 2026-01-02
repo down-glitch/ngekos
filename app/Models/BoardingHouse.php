@@ -12,7 +12,7 @@ class BoardingHouse extends Model
         'thumbnail',
         'city_id',
         'category_id',
-        'descriprtion',
+        'description',
         'price',
         'address'
     ];
@@ -24,7 +24,7 @@ class BoardingHouse extends Model
 
     public function category()
     {
-        return $this->belongTo(Category::class);
+        return $this->belongsTo(Category::class);
     }
 
     public function rooms()
