@@ -23,7 +23,7 @@ class Transaction extends Model
         'transaction_date'
     ];
 
-    public function boardinHouse()
+    public function boardingHouse()
     {
         return $this->belongsTo(BoardingHouse::class);
     }
